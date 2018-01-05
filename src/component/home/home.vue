@@ -15,7 +15,7 @@ export default {
     homeView
   },
   mounted() {
-    // this.$router.push("/login")
+    this.$router.push("/login")
   },
   data() {
     return {

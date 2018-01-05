@@ -10709,7 +10709,7 @@ process.umask = function () {
     homeView: __WEBPACK_IMPORTED_MODULE_1__view_vue__["a" /* default */]
   },
   mounted: function mounted() {
-    // this.$router.push("/login")
+    this.$router.push("/login");
   },
   data: function data() {
     return {

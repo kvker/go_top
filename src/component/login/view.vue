@@ -1,5 +1,5 @@
 <template lang="pug">
-  z-view.homepage
+  z-view.login-view
     z-view.top
       z-text 知识来冲顶
       z-text 奖金任你领
@@ -23,10 +23,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-.homepage {
-  position: absolute;
-  top: 0;
-  left: 0;
+.login-view {
   width: 100%;
   height: 100%;
   background: purple;

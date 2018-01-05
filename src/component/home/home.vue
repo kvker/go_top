@@ -1,19 +1,27 @@
 <template lang="pug">
-  z-page.home(:mainPage="true")
+  z-root-page.home(:noHeader="true")
+    home-view
     transition(:name="transitionName", @before-enter="beforeEnter", @after-enter="afterEnter")
       router-view(:afterEnter="hasEnter")
 </template>
 
 <script>
+import { zRootPage } from "koala-ui";
+import homeView from "./view.vue";
+
 export default {
+  components: {
+    zRootPage,
+    homeView
+  },
   mounted() {
-    this.$router.push("/login")
+    // this.$router.push("/login")
   },
   data() {
     return {
       transitionName: "push",
-      hasEnter: false,
-    }
+      hasEnter: false
+    };
   },
   watch: {
     $route(to, from) {
@@ -63,7 +71,8 @@ export default {
     transition: all 0.3s ease;
   }
 
-  .push-leave-to, .pop-enter {
+  .push-leave-to,
+  .pop-enter {
     transform: translateX(-50%);
     opacity: 0.8;
   }
@@ -101,7 +110,6 @@ export default {
   }
 
   .bottom {
-
     button {
       width: 80%;
       height: 40px;
@@ -109,7 +117,7 @@ export default {
       border-radius: 20px;
 
       &.phone-login {
-      margin-bottom: 8px;
+        margin-bottom: 8px;
         color: #ddd;
         background: transparent;
         font-size: 14px;

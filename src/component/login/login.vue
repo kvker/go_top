@@ -1,5 +1,5 @@
 <template lang="pug">
-  z-page.login(:mainPage="true", backgroung="transparent")
+  z-page.login(:mainPage="true", :noHeader="true", backgroung="transparent")
     login-view
 </template>
 

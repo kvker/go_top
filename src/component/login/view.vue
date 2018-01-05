@@ -4,15 +4,21 @@
       z-text 知识来冲顶
       z-text 奖金任你领
     z-view.bottom
-      z-button.phone-login 手机号码登录
-      z-button.wechat-login 微信登录
+      z-button.phone-login(@click='login("phone")') 手机号码登录
+      z-button.wechat-login(@click='login("wechat")') 微信登录
       z-text.remind 注册即表示你已同意
-      router-link.link-delegate(to="delegate") 用户协议及隐私条款
+      router-link.link-delegate(to="//delegate") 用户协议及隐私条款
 </template>
 
 <script>
 export default {
-
+  methods: {
+    login(type) {
+      this.$router.go(-1)
+      if(type === 'phone') ;
+      else ;
+    }
+  }
 };
 </script>
 

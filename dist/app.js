@@ -11357,6 +11357,12 @@ exports.default = {
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 
@@ -11367,6 +11373,9 @@ exports.default = {
   methods: {
     evaluate: function evaluate(type) {
       alert('点击评价');
+    },
+    setting: function setting() {
+      alert('点击设置');
     },
     invite: function invite(type) {
       alert('点击邀请');
@@ -13415,7 +13424,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.home-view[data-v-5300390c] {\n  widows: 100%;\n  height: 100%;\n  background: purple;\n}\n.home-view .top-buttons[data-v-5300390c] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.home-view .top-buttons .left[data-v-5300390c],\n.home-view .top-buttons .right[data-v-5300390c] {\n  width: 80px;\n  margin-top: 24px;\n}\n.home-view .top-buttons .left .circle[data-v-5300390c],\n.home-view .top-buttons .right .circle[data-v-5300390c] {\n  width: 30px;\n  line-height: 30px;\n  border-radius: 50%;\n  text-align: center;\n  background: rgba(200, 200, 200, 0.2);\n  color: white;\n}\n.home-view .top-buttons .left .title[data-v-5300390c],\n.home-view .top-buttons .right .title[data-v-5300390c] {\n  font-size: 12px;\n  color: #ddd;\n}\n.home-view .remind[data-v-5300390c] {\n  width: 100%;\n  padding: 0 20%;\n  margin-top: 40px;\n  color: white;\n  text-align: center;\n}\n.home-view .remind .start-time[data-v-5300390c] {\n  font-size: 12px;\n}\n.home-view .remind .detail[data-v-5300390c] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  font-size: 18px;\n  font-weight: 800;\n}\n.home-view .card[data-v-5300390c] {\n  position: relative;\n  left: calc(50% - 150px);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 300px;\n  height: 300px;\n  border-radius: 10px;\n  background: white;\n  margin-top: 32px;\n}\n.home-view .card .user-head[data-v-5300390c] {\n  width: 40px;\n  height: 40px;\n  margin-top: 32px;\n}\n.home-view .card .username[data-v-5300390c] {\n  margin: 16px 0;\n  line-height: 40px;\n}\n.home-view .card .info[data-v-5300390c] {\n  display: flex;\n  border-top: 1px solid #d8d8d8;\n  border-bottom: 1px solid #d8d8d8;\n}\n.home-view .card .info .left[data-v-5300390c] {\n  border-right: 1px solid #d8d8d8;\n}\n.home-view .card .info .left[data-v-5300390c],\n.home-view .card .info .right[data-v-5300390c] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  width: 150px;\n  height: 100px;\n}\n.home-view .card .info .left .title[data-v-5300390c],\n.home-view .card .info .right .title[data-v-5300390c] {\n  font-size: 14px;\n  color: #999;\n}\n.home-view .card .info .left .detail[data-v-5300390c],\n.home-view .card .info .right .detail[data-v-5300390c] {\n  font-size: 40px;\n  color: purple;\n}\n.home-view .card .life[data-v-5300390c] {\n  display: flex;\n  flex: 1;\n  justify-content: space-around;\n  align-items: center;\n  width: 300px;\n  color: #999;\n}\n.home-view .card .life .title[data-v-5300390c] {\n  width: 96px;\n  font-size: 14px;\n}\n.home-view .card .life .love[data-v-5300390c] {\n  position: relative;\n  top: 4px;\n  width: 24px;\n  line-height: 24px;\n  text-align: center;\n}\n.home-view .card .life .love .count[data-v-5300390c] {\n  top: -4px;\n  position: relative;\n  color: white;\n}\n.home-view .card .life .love .ll[data-v-5300390c],\n.home-view .card .life .love .lr[data-v-5300390c] {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 24px;\n  height: 24px;\n  background: red;\n  transform: rotateZ(45deg);\n  z-index: 0;\n}\n.home-view .card .life .love .ll .lc[data-v-5300390c],\n.home-view .card .life .love .lr .lc[data-v-5300390c] {\n  position: absolute;\n  width: 24px;\n  height: 24px;\n  border-radius: 50%;\n}\n.home-view .card .life .love .ll .lc[data-v-5300390c] {\n  left: -12px;\n  background: red;\n}\n.home-view .card .life .love .lr .lc[data-v-5300390c] {\n  top: -12px;\n  background: red;\n}\n.home-view .card .life .get-more[data-v-5300390c] {\n  width: 96px;\n  height: 32px;\n  border-radius: 20px;\n  border: 1px solid #d8d8d8;\n  background: transparent;\n  color: #999;\n}\n.home-view .bottom-buttons[data-v-5300390c] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 32px;\n}\n.home-view .bottom-buttons .left[data-v-5300390c],\n.home-view .bottom-buttons .right[data-v-5300390c] {\n  width: 40%;\n  height: 40px;\n  margin: 0 5%;\n  border-radius: 20px;\n  background: rgba(200, 200, 200, 0.2);\n  color: white;\n  font-size: 14px;\n}\n", ""]);
+exports.push([module.i, "\n.home-view[data-v-5300390c] {\n  widows: 100%;\n  height: 100%;\n  background: purple;\n}\n.home-view .top-buttons[data-v-5300390c] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.home-view .top-buttons .left[data-v-5300390c],\n.home-view .top-buttons .right[data-v-5300390c] {\n  width: 80px;\n  margin-top: 24px;\n}\n.home-view .top-buttons .left .circle[data-v-5300390c],\n.home-view .top-buttons .right .circle[data-v-5300390c] {\n  width: 30px;\n  line-height: 30px;\n  border-radius: 50%;\n  text-align: center;\n  background: rgba(200, 200, 200, 0.2);\n  color: white;\n}\n.home-view .top-buttons .left .title[data-v-5300390c],\n.home-view .top-buttons .right .title[data-v-5300390c] {\n  font-size: 12px;\n  color: #ddd;\n}\n.home-view .remind[data-v-5300390c] {\n  width: 100%;\n  padding: 0 20%;\n  margin-top: 40px;\n  color: white;\n  text-align: center;\n}\n.home-view .remind .start-time[data-v-5300390c] {\n  font-size: 12px;\n}\n.home-view .remind .detail[data-v-5300390c] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  font-size: 18px;\n  font-weight: 800;\n}\n.home-view .card[data-v-5300390c] {\n  position: relative;\n  left: calc(50% - 150px);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 300px;\n  height: 300px;\n  border-radius: 10px;\n  background: white;\n  margin-top: 32px;\n}\n.home-view .card .three-points[data-v-5300390c] {\n  position: absolute;\n  top: 0;\n  right: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  width: 40px;\n  height: 40px;\n}\n.home-view .card .three-points .point[data-v-5300390c] {\n  width: 4px;\n  height: 4px;\n  margin: 1px 0;\n  border-radius: 2px;\n  background: purple;\n}\n.home-view .card .user-head[data-v-5300390c] {\n  width: 40px;\n  height: 40px;\n  margin-top: 32px;\n}\n.home-view .card .username[data-v-5300390c] {\n  margin: 16px 0;\n  line-height: 40px;\n}\n.home-view .card .info[data-v-5300390c] {\n  display: flex;\n  border-top: 1px solid #d8d8d8;\n  border-bottom: 1px solid #d8d8d8;\n}\n.home-view .card .info .left[data-v-5300390c] {\n  border-right: 1px solid #d8d8d8;\n}\n.home-view .card .info .left[data-v-5300390c],\n.home-view .card .info .right[data-v-5300390c] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  width: 150px;\n  height: 100px;\n}\n.home-view .card .info .left .title[data-v-5300390c],\n.home-view .card .info .right .title[data-v-5300390c] {\n  font-size: 14px;\n  color: #999;\n}\n.home-view .card .info .left .detail[data-v-5300390c],\n.home-view .card .info .right .detail[data-v-5300390c] {\n  font-size: 40px;\n  color: purple;\n}\n.home-view .card .life[data-v-5300390c] {\n  display: flex;\n  flex: 1;\n  justify-content: space-around;\n  align-items: center;\n  width: 300px;\n  color: #999;\n}\n.home-view .card .life .title[data-v-5300390c] {\n  width: 96px;\n  font-size: 14px;\n}\n.home-view .card .life .love[data-v-5300390c] {\n  position: relative;\n  top: 4px;\n  width: 24px;\n  line-height: 24px;\n  text-align: center;\n}\n.home-view .card .life .love .count[data-v-5300390c] {\n  top: -4px;\n  position: relative;\n  color: white;\n}\n.home-view .card .life .love .ll[data-v-5300390c],\n.home-view .card .life .love .lr[data-v-5300390c] {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 24px;\n  height: 24px;\n  background: red;\n  transform: rotateZ(45deg);\n  z-index: 0;\n}\n.home-view .card .life .love .ll .lc[data-v-5300390c],\n.home-view .card .life .love .lr .lc[data-v-5300390c] {\n  position: absolute;\n  width: 24px;\n  height: 24px;\n  border-radius: 50%;\n}\n.home-view .card .life .love .ll .lc[data-v-5300390c] {\n  left: -12px;\n  background: red;\n}\n.home-view .card .life .love .lr .lc[data-v-5300390c] {\n  top: -12px;\n  background: red;\n}\n.home-view .card .life .get-more[data-v-5300390c] {\n  width: 96px;\n  height: 32px;\n  border-radius: 20px;\n  border: 1px solid #d8d8d8;\n  background: transparent;\n  color: #999;\n}\n.home-view .bottom-buttons[data-v-5300390c] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 32px;\n}\n.home-view .bottom-buttons .left[data-v-5300390c],\n.home-view .bottom-buttons .right[data-v-5300390c] {\n  width: 40%;\n  height: 40px;\n  margin: 0 5%;\n  border-radius: 20px;\n  background: rgba(200, 200, 200, 0.2);\n  color: white;\n  font-size: 14px;\n}\n", ""]);
 
 // exports
 
@@ -13507,6 +13516,26 @@ var render = function() {
         "z-view",
         { staticClass: "card" },
         [
+          _c(
+            "z-vertical-button",
+            { staticClass: "three-points", on: { click: _vm.setting } },
+            [
+              _c(
+                "template",
+                { slot: "top" },
+                [_c("z-view", { staticClass: "point" })],
+                1
+              ),
+              _c("z-view", { staticClass: "point" }),
+              _c(
+                "template",
+                { slot: "bottom" },
+                [_c("z-view", { staticClass: "point" })],
+                1
+              )
+            ],
+            2
+          ),
           _c("z-img", {
             staticClass: "user-head",
             attrs: { src: "#", alt: "head" }

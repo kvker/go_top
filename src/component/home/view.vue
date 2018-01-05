@@ -18,6 +18,12 @@
         z-text |
         z-text ¥50000 奖金
     z-view.card
+      z-vertical-button.three-points(@click='setting')
+        template(slot='top')
+          z-view.point
+        z-view.point
+        template(slot='bottom')
+          z-view.point
       z-img.user-head(src="#", alt='head')
       z-text.username 心聆赵君
       z-view.info
@@ -51,6 +57,9 @@ export default {
   methods: {
     evaluate(type) {
       alert('点击评价')
+    },
+    setting() {
+      alert('点击设置')
     },
     invite(type) {
       alert('点击邀请')
@@ -121,6 +130,26 @@ export default {
     border-radius: 10px;
     background: white;
     margin-top: 32px;
+
+    .three-points {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+
+      .point {
+        width: 4px;
+        height: 4px;
+        margin: 1px 0;
+        border-radius: 2px;
+        background: purple;
+      }
+    }
 
     @width: 300px;
 

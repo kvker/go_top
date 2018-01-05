@@ -45,16 +45,17 @@ export default {
   background: purple;
 
   .push-enter {
-    left: 100%;
+    transform: translateX(100%);
+    opacity: 0.8;
   }
 
   .push-enter-active {
-    transition: left 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .push-enter-to,
   .push-leave {
-    left: 0;
+    transform: translateX(0);
     opacity: 1;
   }
 
@@ -62,13 +63,8 @@ export default {
     transition: all 0.3s ease;
   }
 
-  .push-leave-to {
-    left: -50%;
-    opacity: 0.8;
-  }
-
-  .pop-enter {
-    left: -50%;
+  .push-leave-to, .pop-enter {
+    transform: translateX(-50%);
     opacity: 0.8;
   }
 
@@ -78,16 +74,17 @@ export default {
 
   .pop-enter-to,
   .pop-leave {
-    left: 0;
+    transform: translateX(0);
     opacity: 1;
   }
 
   .pop-leave-active {
-    transition: left 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 999;
   }
 
   .pop-leave-to {
-    left: 100%;
+    transform: translateX(100%);
   }
 
   .top,

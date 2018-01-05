@@ -13,6 +13,8 @@ export default {
 </script>
 
 
-<style scoped lang='less'>
-
+<style lang='less'>
+* {
+  box-sizing: border-box;
+}
 </style>

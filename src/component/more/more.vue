@@ -1,6 +1,6 @@
 <template lang="pug">
-  z-page.rule(title="官方规则说明")
-    z-view.d-content 规则
+  z-page.more(title="获取额外生命值")
+    z-view.d-content 获取额外生命值
 </template>
 
 <script>
@@ -10,7 +10,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-.rule {
+.more {
 
   .d-content {
     height: 100%;

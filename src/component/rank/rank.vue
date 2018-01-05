@@ -1,6 +1,6 @@
 <template lang="pug">
-  z-page.rule(title="官方规则说明")
-    z-view.d-content 规则
+  z-page.rank(title="排行榜")
+    z-view.d-content 排行榜
 </template>
 
 <script>
@@ -10,7 +10,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-.rule {
+.rank {
 
   .d-content {
     height: 100%;

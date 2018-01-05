@@ -2,10 +2,8 @@
   <z-page
     id="app"
     :mainPage="true"
-    title="首页">
-    <z-list
-      :items="items"
-      @itemClick="itemClick" />
+    background="transparent">
+    <homepage />
     <transition
       :name="transitionName"
       @before-enter="beforeEnter"
@@ -17,15 +15,14 @@
 </template>
 
 <script>
-import { zList } from 'koala-ui'
+import Homepage from './component/homepage/homepage.vue'
 
 export default {
   components: {
-    zList
+    Homepage,
   },
   data() {
     return {
-      items: ['点我体验切换'],
       transitionName: "push",
       hasEnter: false,
     }

@@ -5,6 +5,8 @@
 > 因为 icons 关键词与 HBuilder 打包冲突, 所以添加到手机桌面会没有 icons, 如果需要, 请替换 manifest.json 与 manifest.pwa.json (或替换 icons 即可)
 > Android 需要 Chrome 浏览器, iOS 请使用 Safari
 
+### [PC Chrome 体验](https://zweizhao.github.io/GoTop)
+
 
 1. npm install 安装依赖（单纯预览可以省略此步）
 

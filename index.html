@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vue 冲顶大会</title>
-    <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        /* overflow: hidden; */
-      }
-    </style>
-</head>
-<body>
-    <div id="app"></div>
 
-    <script src="dist/app.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="GoTop PWA">
+  <link rel="apple-touch-icon" href="images/icons/logo.jpg">
+  <!-- iOS done -->
+  <link rel="manifest" href="manifest.json" />
+  <title>Vue PWA 冲顶大会</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body style="background: purple">
+  <div id="app"></div>
+
+  <script>
+    if (navigator.serviceWorker != null) {
+      navigator.serviceWorker.register('service-work.js')
+        .then(function() {
+          // console.log('Service Worker Registered');
+        });
+    }
+  </script>
+  <script async src="dist/app.js"></script>
 </body>
+
 </html>

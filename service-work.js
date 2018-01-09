@@ -1,4 +1,4 @@
-var cacheName = 'gotop-05'
+var cacheName = 'gotop-06'
 
 var cacheList = [
   "/",
